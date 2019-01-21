@@ -1,32 +1,72 @@
-.App {
-  text-align: center;
+html, body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h1 {
+  font-family: 'Lato Black', sans-serif;
+  font-weight: 900;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slider {
+  position: relative;
+  margin: 0px auto;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
 }
-
-.App-link {
-  color: #61dafb;
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.arrow {
+  cursor: pointer;
+  transition: transform ease-in .1s;
+}
+.nextArrow {
+  margin-left:30px
+}
+.backArrow {
+  margin-right:30px
+}
+.backArrow:hover {
+  padding-bottom:4px;
+  border-bottom:2px solid #666666;
+}
+.nextArrow:hover {
+  padding-bottom:4px;
+  border-bottom:2px solid #666666;
+}
+.solidText {
+  white-space: nowrap;
+}
+.fa-arrow-right:before, .fa-arrow-left:before {
+  color: #222
+}
+.slider-nav__grey {
+  background-color: #eee;
+  padding:10px;
+  margin: 0;
+}
+.tagline {
+  font-weight:600;
+}
+figcaption {
+  font-size: smaller;
+  font-weight: 100;
+}
+.tagging {
+  margin:10% 0;
+  font-weight: 100;
+}
+.tagging h3 {
+  font-size: small
+}
+.tagging a {
+  color: #FF0080
 }
